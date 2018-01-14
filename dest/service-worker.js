@@ -14,8 +14,8 @@ var version = 'v1::';
 var offlineFundamentals = [
   '',
   'gfx/*.png',
-  'index.js',
-  'tones/*.mp3'
+  'tones/*.mp3',
+  'index.js'
 ];
 
 /* The install event fires when the service worker is first installed.
