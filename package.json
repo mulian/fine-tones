@@ -1,0 +1,28 @@
+{
+  "name": "fine-tones",
+  "version": "0.0.1",
+  "description": "Push to sound app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mulian/fine-tones.git"
+  },
+  "keywords": [
+    "tones",
+    "sounds",
+    "noise",
+    "webapp",
+    "bang",
+    "tone",
+    "sound"
+  ],
+  "author": "Max Hoffmann, Gerald Winter",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mulian/fine-tones/issues"
+  },
+  "homepage": "https://github.com/mulian/fine-tones#readme"
+}
