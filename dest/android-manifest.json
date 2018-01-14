@@ -1,0 +1,15 @@
+{
+  "short_name": "Fine Tones",
+  "name": "Fine Tones",
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "index.html",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color" : "#fff"
+}

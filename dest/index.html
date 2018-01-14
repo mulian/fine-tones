@@ -1,6 +1,69 @@
-<html>
-  <head>
-    <title>Fine Tones</title>
-    <script src="index.js"></script>
-  </head>
+<html manifest="manifest.mf">
+
+<head>
+  <title>Fine Tones</title>
+
+  <link rel="manifest" href="/android-manifest.json">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <link rel="apple-touch-icon" href="icon.png" sizes="192x192">
+  <meta name="apple-mobile-web-app-title" content="Fine Tones">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+
+  <style>
+    .icon {
+      width: 100px;
+      height: 100px;
+      margin: 0px;
+      border-radius: 18px;
+
+    }
+
+    .iconContainer {
+      border: solid 1px !important;
+      border-radius: 18px;
+      margin: 10px;
+      cursor: pointer;
+    }
+
+    .glass {
+      /* background styles */
+      position: relative;
+      display: inline-block;
+      padding: 15px 25px;
+      background-color: green;
+      /*for compatibility with older browsers*/
+      background-image: linear-gradient(black, white);
+
+      /* text styles */
+      text-decoration: none;
+      color: #fff;
+      font-size: 25px;
+      font-family: sans-serif;
+      font-weight: 100;
+    }
+  </style>
+  <script src="index.js"></script>
+  <script>
+    // if ('serviceWorker' in navigator) {
+    //   navigator.serviceWorker.register('service-worker.js');
+    // }
+  </script>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Fine Tones</h1>
+    <div class="row" id='tones-container'>
+    </div>
+  </div>
+</body>
+
 </html>

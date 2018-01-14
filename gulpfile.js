@@ -18,32 +18,12 @@ gulp.task('browserify', function() {
 gulp.task('build_js', function() {
   let src = './es6/*.js';
   gulp.src(src)
-    .pipe(watch(src,function() {
-      gulp.start('browserify')
-    }))
+    // .pipe(watch(src,function() {
+    //   gulp.start('browserify')
+    // }))
     // .pipe(coffeescript({bare: true}).on('error', gutil.log))
     .pipe(babel({presets: ['env']}))
     .pipe(gulp.dest('./js/'));
 });
 
-gulp.task('default', ['build_js']);
-
-
-// gulp.task('default', () =>
-//     gulp.src('src/app.js')
-//         .pipe(babel({
-//             presets: ['env']
-//         }))
-//         .pipe(gulp.dest('dist'))
-// );
-
-
-// gulp.task('scripts', function() {
-//     // Single entry point to browserify
-//     gulp.src('src/js/app.js')
-//         .pipe(browserify({
-//           insertGlobals : true,
-//           debug : !gulp.env.production
-//         }))
-//         .pipe(gulp.dest('./build/js'))
-// });
+gulp.task('default', ['browserify','build_js']);
