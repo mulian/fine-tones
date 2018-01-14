@@ -1,6 +1,7 @@
 CACHE MANIFEST
 index.html
 index.js
+icon.png
 tones/alert.mp3
 tones/announcement.mp3
 tones/applause.mp3
